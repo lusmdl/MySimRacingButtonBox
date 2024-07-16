@@ -1,18 +1,33 @@
 #include <Arduino.h>
+#include "WheelButtons/Buttons.hpp"
+#include "WheelButtons/ComI2C.hpp"
 
-// put function declarations here:
-int myFunction(int, int);
+
+Buttons buttons;
+ComI2C i2c(Wire, buttons);
+
+void requestEvent();
 
 void setup() {
   // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+
+  #ifdef LSMDL_DEBUGMODE
+  Serial.begin(9600);
+  Serial.print("setup\n");
+  #endif
+  buttons.begin();
+  
+  i2c.begin(8,requestEvent);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+  buttons.listener();
+
 }
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+void requestEvent() {
+
+  i2c.event();
+
 }
