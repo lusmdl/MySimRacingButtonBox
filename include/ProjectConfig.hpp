@@ -1,7 +1,7 @@
 #ifndef PROJECT_CONFIG_HPP
 #define PROJECT_CONFIG_HPP
 
-#define LSMDL_DEBUGMODE
+//#define LSMDL_DEBUGMODE
 
 #ifdef LSMDL_DEBUGMODE
 #warning "ATMEGA runs in debug mode!!! the envirement should be an arduino uno and the RX and TX pins schould be unconnected, because of the serial communication!"

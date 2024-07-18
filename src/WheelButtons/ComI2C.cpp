@@ -27,6 +27,10 @@ void ComI2C::event() {
         }
     }
 
+    #ifdef LSMDL_DEBUGMODE
+        Serial.print("16 Bit I2C communication: " + String(payload, HEX) + " (HEX)\n");
+    #endif
+
     // Send the 16-bit payload over I2C
     wire_->write(reinterpret_cast<uint8_t*>(&payload), sizeof(payload));
 }

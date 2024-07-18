@@ -29,5 +29,4 @@ void loop() {
 void requestEvent() {
 
   i2c.event();
-
 }
