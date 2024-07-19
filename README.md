@@ -13,9 +13,9 @@ This project involves a PCB featuring an ATmega328P microcontroller with various
 - **Development Platform**: PlatformIO
 - **Libraries**:
   - **Wire.h**: for I2C communication
-- [**Platform IO**](https://platformio.org/install/ide?install=vscode): Used for programming the ATmega32u4 microcontroller.
-- [**AVR Lib**](https://github.com/avrdudes/avr-libc.git): standard lib with platformIO.
-- [**Keypad Library**](https://github.com/Chris--A/Keypad.git): Used for the 4x4 Matrix
+  - [**Platform IO**](https://platformio.org/install/ide?install=vscode): Used for programming the ATmega32u4 microcontroller.
+  - [**AVR Lib**](https://github.com/avrdudes/avr-libc.git): standard lib with platformIO.
+  - [**Keypad Library**](https://github.com/Chris--A/Keypad.git): Used for the 4x4 Matrix
 
 ### Functionality
 The ATmega328P microcontroller reads the state of the button matrix and communicates the button states to an Arduino Micro via I2C. The state of the 16 buttons is packed into a 16-bit payload and sent over I2C when requested by the Arduino Micro.
