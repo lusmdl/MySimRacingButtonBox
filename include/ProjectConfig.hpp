@@ -1,3 +1,8 @@
+/**
+ * @file ProjectConfig.hpp
+ * @brief Configuration file for project settings and definitions.
+ */
+
 #ifndef PROJECT_CONFIG_HPP
 #define PROJECT_CONFIG_HPP
 

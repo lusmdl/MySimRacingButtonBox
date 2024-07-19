@@ -29,13 +29,15 @@ Buttons::Buttons() :
  * No dynamic memory allocation is required.
  */
 Buttons::~Buttons() {
+
     // No dynamic memory allocation required
 }
 
 /**
- * @brief Initializes the keypad or hardware components.
+ * @brief Initializes the button matrix.
  */
 void Buttons::begin() {
+
     keys_.setDebounceTime(1);
     keys_.setHoldTime(1);
 }
@@ -52,6 +54,7 @@ void Buttons::listener() {
     char eventKey = keys_.getKey(); // Necessary to get the data for the other methods
     
     if (eventKey) {
+
         #ifdef LSMDL_DEBUGMODE
         Serial.print("Key Pressed Event at key " + String(eventKey) + "\n");
         #endif
@@ -60,6 +63,7 @@ void Buttons::listener() {
 
     #ifdef LSMDL_DEBUGMODE
     if (keys_.keyStateChanged()) {
+
         Serial.print("Key state change at key " + String(lasteventkey_) + "\n");
     }
     #endif
@@ -68,6 +72,7 @@ void Buttons::listener() {
     switch (keys_.getState()) { // Only one key can be pressed at each cycle!!
 
         case PRESSED:
+
             // Handle pressed event
             
             #ifdef LSMDL_DEBUGMODE
@@ -81,7 +86,9 @@ void Buttons::listener() {
             #endif
 
             break;
+            
         case RELEASED:
+
             // Handle released event
 
             #ifdef LSMDL_DEBUGMODE

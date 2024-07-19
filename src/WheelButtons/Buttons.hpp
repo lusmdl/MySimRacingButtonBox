@@ -11,10 +11,11 @@
 #include "Button.h"
 
 
-
+/// @brief Manages the button matrix.
 class Buttons {
 
     public:
+    
         Buttons();
         ~Buttons();
         void begin();
@@ -22,15 +23,16 @@ class Buttons {
         pod_button getData(uint8_t button);
 
     private:
-        pod_button data_[BTN_NUMBER];
-        uint8_t rowpins_[BTN_MATRIX_R];
-        uint8_t columnspins_[BTN_MATRIX_L];
-        char keyarray_[BTN_MATRIX_R][BTN_MATRIX_L];
-        Keypad keys_;
+
+        pod_button data_[BTN_NUMBER]; // Array to store button data
+        uint8_t rowpins_[BTN_MATRIX_R]; // Array to store row pins.
+        uint8_t columnspins_[BTN_MATRIX_L]; // Array to store column pins.
+        char keyarray_[BTN_MATRIX_R][BTN_MATRIX_L]; // Array to store key mappings.
+        Keypad keys_; // Keypad object.
+        char lasteventkey_; // store the Last event key -> otherwise i get in trouble
 
         int getmap(char key);
         char getmap(int key);
-        char lasteventkey_; // store the key - otherwise i have problems
 };
 
 

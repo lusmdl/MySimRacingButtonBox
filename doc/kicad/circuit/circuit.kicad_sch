@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "edf5049a-0fa6-4e51-97b2-c2c53b61158b")
 	(paper "A4")
+	(title_block
+		(title "wheele buttons")
+		(date "2024-07-18")
+		(rev "v1.0.0")
+		(company "https://github.com/lusmdl")
+	)
 	(lib_symbols
 		(symbol "Connector:AVR-ISP-6"
 			(pin_names
@@ -3973,27 +3979,6 @@
 			(type default)
 		)
 		(uuid "fb60f7d3-891e-4ddf-b488-9b6bceb72ebb")
-	)
-	(text "Rel_v1.0.0"
-		(exclude_from_sim no)
-		(at 274.574 193.294 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "7367db0f-41b2-4b0d-9d52-c38596c4c4f8")
-	)
-	(text "schematics: Wheel Buttons"
-		(exclude_from_sim no)
-		(at 212.344 189.738 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(href "https://github.com/lusmdl/MySimRacingWheeleButtons")
-		)
-		(uuid "a7a1c046-56ae-4774-bae2-7a0c068c50a9")
 	)
 	(label "GND"
 		(at 121.92 77.47 0)
