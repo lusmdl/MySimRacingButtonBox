@@ -52,7 +52,7 @@ void ComI2C::event() {
         }
     }
 
-    #ifdef LSMDL_DEBUGMODE
+    #ifdef LUSMDL_DEBUGMODE
         Serial.print("16 Bit I2C communication: " + String(payload, HEX) + " (HEX)\n");
     #endif
 

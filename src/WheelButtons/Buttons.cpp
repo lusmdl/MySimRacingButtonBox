@@ -55,13 +55,13 @@ void Buttons::listener() {
     
     if (eventKey) {
 
-        #ifdef LSMDL_DEBUGMODE
+        #ifdef LUSMDL_DEBUGMODE
         Serial.print("Key Pressed Event at key " + String(eventKey) + "\n");
         #endif
         lasteventkey_ = eventKey;
     }
 
-    #ifdef LSMDL_DEBUGMODE
+    #ifdef LUSMDL_DEBUGMODE
     if (keys_.keyStateChanged()) {
 
         Serial.print("Key state change at key " + String(lasteventkey_) + "\n");
@@ -75,13 +75,13 @@ void Buttons::listener() {
 
             // Handle pressed event
             
-            #ifdef LSMDL_DEBUGMODE
+            #ifdef LUSMDL_DEBUGMODE
             Serial.print("key state PRESSED at key " + String(lasteventkey_) + " old value was " + String(data_[getmap(lasteventkey_)].pushed));
             #endif
 
             data_[getmap(lasteventkey_)].pushed++; 
             
-            #ifdef LSMDL_DEBUGMODE
+            #ifdef LUSMDL_DEBUGMODE
             Serial.print(" and the new value is " + String(data_[getmap(lasteventkey_)].pushed) + "\n");
             #endif
 
@@ -91,13 +91,13 @@ void Buttons::listener() {
 
             // Handle released event
 
-            #ifdef LSMDL_DEBUGMODE
+            #ifdef LUSMDL_DEBUGMODE
             Serial.print("key state RELEASED at key " + String(lasteventkey_) + " old value was " + String(data_[getmap(lasteventkey_)].pushed));
             #endif
 
             data_[getmap(lasteventkey_)].pushed = 0; 
 
-            #ifdef LSMDL_DEBUGMODE
+            #ifdef LUSMDL_DEBUGMODE
             Serial.print(" and the new value is " + String(data_[getmap(lasteventkey_)].pushed) + "\n");
             #endif
 

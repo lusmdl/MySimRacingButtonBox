@@ -24,7 +24,7 @@ void setup() {
 
   // put your setup code here, to run once:
 
-  #ifdef LSMDL_DEBUGMODE
+  #ifdef LUSMDL_DEBUGMODE
   Serial.begin(9600);
   Serial.print("setup\n");
   #endif
