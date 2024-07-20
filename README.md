@@ -81,10 +81,6 @@ The ATmega328P microcontroller reads the state of the button matrix and communic
    - Power up your setup.
    - The ATmega328P will continuously poll the button states and update the Arduino Micro via I2C.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Contributing
 
 1. Fork the repository.
@@ -96,3 +92,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any questions or suggestions, please feel free to [open an issue](https://github.com/lusmdl/MySimRacingWheeleButtons/issues).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
