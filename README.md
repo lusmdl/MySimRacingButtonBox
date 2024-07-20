@@ -1,50 +1,31 @@
 
-# My Sim Racing Wheele Buttons
+# Sim Racing Button Controller
 
-This project involves a PCB featuring an ATmega328P microcontroller with various connection possibilities for button matrices. It serves as a subproject to a larger project that manages the USB communication of a sim racing controller using an Arduino Micro. This ATmega328P project communicates over I2C with the Arduino Micro and delivers the states of 16 buttons in a 16-bit signal.
+Welcome to the Sim Racing Button Controller repository! This project focuses on programming an ATmega328P microcontroller to manage a button matrix for sim racing setups. The controller communicates with an Arduino Micro via I2C, providing the states of 16 buttons in a 16-bit signal for an enhanced racing experience.
 
-## Project Overview
+## Features
 
-### Hardware
-- **Microcontroller**: ATmega328P
-- **Button Matrix**: up to 16 buttons
+- 16 buttons
+- I2C communication with Arduino Micro
+- Efficient button state management
 
-### Software
-- **Development Platform**: PlatformIO
-- **Libraries**:
-  - **Wire.h**: for I2C communication
-  - [**Platform IO**](https://platformio.org/install/ide?install=vscode): Used for programming the ATmega32u4 microcontroller.
-  - [**AVR Lib**](https://github.com/avrdudes/avr-libc.git): standard lib with platformIO.
-  - [**Keypad Library**](https://github.com/Chris--A/Keypad.git): Used for the 4x4 Matrix
+## Getting Started
 
-### Functionality
-The ATmega328P microcontroller reads the state of the button matrix and communicates the button states to an Arduino Micro via I2C. The state of the 16 buttons is packed into a 16-bit payload and sent over I2C when requested by the Arduino Micro.
+You can use the pre compiled hex file. Or you use compile it [yourself](Installation and Setup).
 
-## Code Structure
+### Hardware Requirements
 
-### Main Code (`main.ino`)
-- Initializes the `Buttons` and `ComI2C` objects.
-- Sets up serial communication (if in debug mode).
-- Defines the `requestEvent` function to handle I2C requests.
-- Contains the `setup()` and `loop()` functions for the Arduino environment.
+- **ATmega328P Microcontroller**
+- 16 Mhz Oscilator
+- 12..22 pF Condansator
+- **Button Matrix**: Up to 16 buttons
 
-### Project Configurations (`ProjectConfig.hpp`)
-- Defines configuration macros, including button matrix definitions and I2C address.
-- Contains optional debug mode setup.
+### Software Requirements
 
-### I2C Communication (`ComI2C.hpp` and `ComI2C.cpp`)
-- `ComI2C` class handles I2C communication.
-- Manages sending the state of the button matrix over I2C.
-
-### Button Management (`Buttons.hpp` and `Buttons.cpp`)
-- `Buttons` class manages the button matrix.
-- Polls button states and updates internal data structures.
-
-### Button Data Structure (`Button.h`)
-- Defines the `pod_button` struct to store button states.
-
-## Requirements
-
+- [**PlatformIO**](https://platformio.org/install/ide?install=vscode): Used for programming the ATmega328P microcontroller.
+- [**Wire.h**](https://www.arduino.cc/en/Reference/Wire): for I2C communication
+- [**AVR Lib**](https://github.com/avrdudes/avr-libc.git): standard lib with PlatformIO.
+- [**Keypad Library**](https://github.com/Chris--A/Keypad.git): Used for the 4x4 Matrix
 
 ## Installation and Setup
 
@@ -52,6 +33,7 @@ The ATmega328P microcontroller reads the state of the button matrix and communic
    - Follow the [installation guide](https://platformio.org/install) to set up PlatformIO in your preferred environment (VSCode, Atom, etc.).
 
 2. **Clone the Repository**:
+
    ```sh
    git clone https://github.com/lusmdl/MySimRacingWheeleButtons.git
    ```
@@ -62,11 +44,13 @@ The ATmega328P microcontroller reads the state of the button matrix and communic
 4. **Build and Upload**:
    - Connect your ATmega328P-based hardware.
    - Build and upload the code using PlatformIO:
-     ```sh
-     pio run --target upload
-     ```
+
+   ```sh
+   pio run --target upload
+   ```
 
 ### Arduino Micro Setup
+
 1. **I2C Communication**:
    - Ensure the Arduino Micro is set up to receive I2C data from the ATmega328P.
    - The Arduino Micro will request the 16-bit button state data from the ATmega328P.
@@ -83,15 +67,13 @@ The ATmega328P microcontroller reads the state of the button matrix and communic
 
 ## Contributing
 
+We welcome contributions from the community!
+
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature-branch`).
 3. Commit your changes (`git commit -am 'Add new feature'`).
 4. Push to the branch (`git push origin feature-branch`).
 5. Create a new Pull Request.
-
-## Contact
-
-For any questions or suggestions, please feel free to [open an issue](https://github.com/lusmdl/MySimRacingWheeleButtons/issues).
 
 ## License
 
