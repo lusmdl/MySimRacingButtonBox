@@ -1,0 +1,24 @@
+### Footprint positions - created on 2024-12-21T11:09:08+0100 ###
+### Printed by KiCad version 8.0.7
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                Package                                                         PosX       PosY       Rot  Side
+C1        12..22             C_0603_1608Metric_Pad1.08x0.95mm_HandSolder                 213.6000   -79.7375  -90.0000  top
+C2        12..22             C_0603_1608Metric_Pad1.08x0.95mm_HandSolder                 213.6000   -83.0625   90.0000  top
+J1        4X4_Button_Matrix  PinHeader_1x08_P2.54mm_Vertical_SMD_Pin1Left                215.3000   -64.6000    0.0000  top
+J1.1      2X2_Matrix_A       PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left                219.0900   -50.4000   90.0000  top
+J1.1.1    Button_1           TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal   246.8000   -49.8000  -90.0000  top
+J1.1.2    Button_2           TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal   207.4000   -49.8000  -90.0000  top
+J1.1.3    Button_5           TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal   246.8000   -92.1000  -90.0000  top
+J1.1.4    Button_6           TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal   207.4000   -92.1000  -90.0000  top
+J1.2      2X2_Matrix_B       PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left                230.9100   -50.4000   90.0000  top
+J1.2.1    Button_3           TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal   246.9000   -83.3000  -90.0000  top
+J1.2.2    Button_4           TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal   207.4000   -69.3000  -90.0000  top
+J1.3      2X2_Matrix_C       PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left                219.0900   -93.5550   90.0000  top
+J1.4      2X2_Matrix_D       PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left                230.9100   -93.5550   90.0000  top
+J3        AVR-ISP            PinHeader_2x03_P2.54mm_Vertical_SMD                         235.8750   -85.6600  180.0000  top
+J4        RJ45               RJ45_Molex_0855135013_Vertical                              240.8100   -63.0000   90.0000  top
+SW1       Reset              SW_Push_1P1T_NO_6x6mm_H9.5mm                                238.7750   -76.1500    0.0000  top
+U1        ATmega328P-P       DIP-28_W7.62mm                                              221.2000   -55.4600    0.0000  top
+Y1        Crystal            Crystal_HC18-U_Vertical                                     217.2000   -78.9000  -90.0000  top
+## End
