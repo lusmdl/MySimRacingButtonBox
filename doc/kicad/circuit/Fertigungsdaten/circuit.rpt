@@ -1,133 +1,133 @@
-## Footprint report - date 2024-12-21T11:09:22+0100
+## Footprint report - date 2024-12-22T15:56:35+0100
 ## Created by KiCad version 8.0.7
 ## Unit = mm, Angle = deg.
 
 $BeginDESCRIPTION
 
 $BOARD
-upper_left_corner 195.317857 45.175000
-lower_right_corner 258.482143 98.325000
+upper_left_corner 203.267857 42.375000
+lower_right_corner 266.432143 95.525000
 $EndBOARD
 
 $MODULE C1
-footprint Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
+footprint Capacitor_SMD:C_0402_1005Metric
 attribut smd
-position 213.600000 79.737500  orientation -90.00
+position 221.800000 72.630000  orientation -90.00
 layer front
 $PAD "1"
 Shape Roundrect Layer front
-position -0.862500  0.000000  size  1.075000  0.950000  orientation 360.00
+position -0.480000  0.000000  size  0.560000  0.620000  orientation 360.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Roundrect Layer front
-position  0.862500  0.000000  size  1.075000  0.950000  orientation 360.00
+position  0.480000  0.000000  size  0.560000  0.620000  orientation 360.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $EndMODULE  C1
 
 $MODULE C2
-footprint Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
+footprint Capacitor_SMD:C_0402_1005Metric
 attribut smd
-position 213.600000 83.062500  orientation 90.00
+position 221.800000 76.700000  orientation 90.00
 layer front
 $PAD "1"
 Shape Roundrect Layer front
-position -0.862500  0.000000  size  1.075000  0.950000  orientation 0.00
+position -0.480000  0.000000  size  0.560000  0.620000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Roundrect Layer front
-position  0.862500  0.000000  size  1.075000  0.950000  orientation 0.00
+position  0.480000  0.000000  size  0.560000  0.620000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $EndMODULE  C2
 
 $MODULE J1
-footprint Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical_SMD_Pin1Left
+footprint Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical_SMD
 attribut smd
-position 215.300000 64.600000  orientation 0.00
+position 222.075000 58.570000  orientation 0.00
 layer front
 $PAD "1"
 Shape Rect Layer front
-position -1.655000 -8.890000  size  2.510000  1.000000  orientation 0.00
+position -2.525000 -3.810000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Rect Layer front
-position  1.655000 -6.350000  size  2.510000  1.000000  orientation 0.00
+position  2.525000 -3.810000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "3"
 Shape Rect Layer front
-position -1.655000 -3.810000  size  2.510000  1.000000  orientation 0.00
+position -2.525000 -1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "4"
 Shape Rect Layer front
-position  1.655000 -1.270000  size  2.510000  1.000000  orientation 0.00
+position  2.525000 -1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "5"
 Shape Rect Layer front
-position -1.655000  1.270000  size  2.510000  1.000000  orientation 0.00
+position -2.525000  1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "6"
 Shape Rect Layer front
-position  1.655000  3.810000  size  2.510000  1.000000  orientation 0.00
+position  2.525000  1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "7"
 Shape Rect Layer front
-position -1.655000  6.350000  size  2.510000  1.000000  orientation 0.00
+position -2.525000  3.810000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "8"
 Shape Rect Layer front
-position  1.655000  8.890000  size  2.510000  1.000000  orientation 0.00
+position  2.525000  3.810000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $EndMODULE  J1
 
 $MODULE J1.1
-footprint Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left
+footprint Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD
 attribut smd
-position 219.090000 50.400000  orientation 90.00
+position 225.000000 48.000000  orientation 0.00
 layer front
 $PAD "1"
 Shape Rect Layer front
-position -1.655000 -3.810000  size  2.510000  1.000000  orientation 0.00
+position -2.525000 -1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Rect Layer front
-position  1.655000 -1.270000  size  2.510000  1.000000  orientation 0.00
+position  2.525000 -1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "3"
 Shape Rect Layer front
-position -1.655000  1.270000  size  2.510000  1.000000  orientation 0.00
+position -2.525000  1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "4"
 Shape Rect Layer front
-position  1.655000  3.810000  size  2.510000  1.000000  orientation 0.00
+position  2.525000  1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -136,7 +136,7 @@ $EndMODULE  J1.1
 $MODULE J1.1.1
 footprint TerminalBlock:TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal
 attribut none
-position 246.800000 49.800000  orientation -90.00
+position 254.750000 47.000000  orientation -90.00
 layer front
 $PAD "1"
 Shape Rect Layer both
@@ -155,7 +155,7 @@ $EndMODULE  J1.1.1
 $MODULE J1.1.2
 footprint TerminalBlock:TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal
 attribut none
-position 207.400000 49.800000  orientation -90.00
+position 215.350000 47.000000  orientation -90.00
 layer front
 $PAD "1"
 Shape Rect Layer both
@@ -174,7 +174,7 @@ $EndMODULE  J1.1.2
 $MODULE J1.1.3
 footprint TerminalBlock:TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal
 attribut none
-position 246.800000 92.100000  orientation -90.00
+position 254.750000 89.300000  orientation -90.00
 layer front
 $PAD "1"
 Shape Rect Layer both
@@ -193,7 +193,7 @@ $EndMODULE  J1.1.3
 $MODULE J1.1.4
 footprint TerminalBlock:TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal
 attribut none
-position 207.400000 92.100000  orientation -90.00
+position 215.350000 89.300000  orientation -90.00
 layer front
 $PAD "1"
 Shape Rect Layer both
@@ -210,31 +210,31 @@ $EndPAD
 $EndMODULE  J1.1.4
 
 $MODULE J1.2
-footprint Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left
+footprint Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD
 attribut smd
-position 230.910000 50.400000  orientation 90.00
+position 237.000000 48.000000  orientation 0.00
 layer front
 $PAD "1"
 Shape Rect Layer front
-position -1.655000 -3.810000  size  2.510000  1.000000  orientation 0.00
+position -2.525000 -1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Rect Layer front
-position  1.655000 -1.270000  size  2.510000  1.000000  orientation 0.00
+position  2.525000 -1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "3"
 Shape Rect Layer front
-position -1.655000  1.270000  size  2.510000  1.000000  orientation 0.00
+position -2.525000  1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "4"
 Shape Rect Layer front
-position  1.655000  3.810000  size  2.510000  1.000000  orientation 0.00
+position  2.525000  1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -243,7 +243,7 @@ $EndMODULE  J1.2
 $MODULE J1.2.1
 footprint TerminalBlock:TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal
 attribut none
-position 246.900000 83.300000  orientation -90.00
+position 254.850000 80.500000  orientation -90.00
 layer front
 $PAD "1"
 Shape Rect Layer both
@@ -262,7 +262,7 @@ $EndMODULE  J1.2.1
 $MODULE J1.2.2
 footprint TerminalBlock:TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal
 attribut none
-position 207.400000 69.300000  orientation -90.00
+position 215.350000 66.500000  orientation -90.00
 layer front
 $PAD "1"
 Shape Rect Layer both
@@ -279,62 +279,62 @@ $EndPAD
 $EndMODULE  J1.2.2
 
 $MODULE J1.3
-footprint Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left
+footprint Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD
 attribut smd
-position 219.090000 93.555000  orientation 90.00
+position 225.000000 91.000000  orientation 0.00
 layer front
 $PAD "1"
 Shape Rect Layer front
-position -1.655000 -3.810000  size  2.510000  1.000000  orientation 0.00
+position -2.525000 -1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Rect Layer front
-position  1.655000 -1.270000  size  2.510000  1.000000  orientation 0.00
+position  2.525000 -1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "3"
 Shape Rect Layer front
-position -1.655000  1.270000  size  2.510000  1.000000  orientation 0.00
+position -2.525000  1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "4"
 Shape Rect Layer front
-position  1.655000  3.810000  size  2.510000  1.000000  orientation 0.00
+position  2.525000  1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $EndMODULE  J1.3
 
 $MODULE J1.4
-footprint Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left
+footprint Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD
 attribut smd
-position 230.910000 93.555000  orientation 90.00
+position 237.000000 91.000000  orientation 180.00
 layer front
 $PAD "1"
 Shape Rect Layer front
-position -1.655000 -3.810000  size  2.510000  1.000000  orientation 0.00
+position -2.525000 -1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Rect Layer front
-position  1.655000 -1.270000  size  2.510000  1.000000  orientation 0.00
+position  2.525000 -1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "3"
 Shape Rect Layer front
-position -1.655000  1.270000  size  2.510000  1.000000  orientation 0.00
+position -2.525000  1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "4"
 Shape Rect Layer front
-position  1.655000  3.810000  size  2.510000  1.000000  orientation 0.00
+position  2.525000  1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -343,7 +343,7 @@ $EndMODULE  J1.4
 $MODULE J3
 footprint Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD
 attribut smd
-position 235.875000 85.660000  orientation 180.00
+position 243.825000 82.860000  orientation 180.00
 layer front
 $PAD "1"
 Shape Rect Layer front
@@ -386,7 +386,7 @@ $EndMODULE  J3
 $MODULE J4
 footprint Connector_RJ:RJ45_Molex_0855135013_Vertical
 attribut smd
-position 240.810000 63.000000  orientation 90.00
+position 248.760000 60.200000  orientation 90.00
 layer front
 $PAD "1"
 Shape Rect Layer front
@@ -447,7 +447,7 @@ $EndMODULE  J4
 $MODULE REF**
 footprint MountingHole:MountingHole_2.2mm_M2
 attribut virtual
-position 249.000000 77.300000  orientation 0.00
+position 256.950000 74.500000  orientation 0.00
 layer front
 $PAD ""
 Shape Circle Layer both
@@ -460,7 +460,7 @@ $EndMODULE  REF**
 $MODULE REF**
 footprint MountingHole:MountingHole_2.2mm_M2
 attribut virtual
-position 204.800000 57.000000  orientation 0.00
+position 212.750000 83.300000  orientation 0.00
 layer front
 $PAD ""
 Shape Circle Layer both
@@ -473,7 +473,7 @@ $EndMODULE  REF**
 $MODULE REF**
 footprint MountingHole:MountingHole_2.2mm_M2
 attribut virtual
-position 204.800000 86.100000  orientation 0.00
+position 212.750000 54.200000  orientation 0.00
 layer front
 $PAD ""
 Shape Circle Layer both
@@ -486,7 +486,7 @@ $EndMODULE  REF**
 $MODULE REF**
 footprint MountingHole:MountingHole_2.2mm_M2
 attribut virtual
-position 239.800000 47.900000  orientation 0.00
+position 247.750000 45.100000  orientation 0.00
 layer front
 $PAD ""
 Shape Circle Layer both
@@ -499,23 +499,17 @@ $EndMODULE  REF**
 $MODULE SW1
 footprint Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm
 attribut smd
-position 238.775000 76.150000  orientation 0.00
+position 246.725000 73.350000  orientation 0.00
 layer front
-$PAD "1"
-Shape Rect Layer front
-position -3.975000 -2.250000  size  1.550000  1.300000  orientation 0.00
-drill  0.000000
-shape_offset  0.000000  0.000000
-$EndPAD
 $PAD "1"
 Shape Rect Layer front
 position  3.975000 -2.250000  size  1.550000  1.300000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
-$PAD "2"
+$PAD "1"
 Shape Rect Layer front
-position -3.975000  2.250000  size  1.550000  1.300000  orientation 0.00
+position -3.975000 -2.250000  size  1.550000  1.300000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -525,12 +519,18 @@ position  3.975000  2.250000  size  1.550000  1.300000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
+$PAD "2"
+Shape Rect Layer front
+position -3.975000  2.250000  size  1.550000  1.300000  orientation 0.00
+drill  0.000000
+shape_offset  0.000000  0.000000
+$EndPAD
 $EndMODULE  SW1
 
 $MODULE U1
 footprint Package_DIP:DIP-28_W7.62mm
 attribut none
-position 221.200000 55.460000  orientation 0.00
+position 229.130000 52.740000  orientation 0.00
 layer front
 $PAD "1"
 Shape Rect Layer both
@@ -705,7 +705,7 @@ $EndMODULE  U1
 $MODULE Y1
 footprint Crystal:Crystal_HC18-U_Vertical
 attribut none
-position 217.200000 78.900000  orientation -90.00
+position 225.150000 72.125000  orientation -90.00
 layer front
 $PAD "1"
 Shape Circle Layer both
