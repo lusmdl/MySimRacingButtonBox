@@ -63,7 +63,7 @@ You can use the pre compiled hex file. Or you use compile it yourself.
    - The ATmega328P will continuously poll the button states and update the Arduino Micro via I2C.
 
 ## Documentation
-The detailed documentation for this project can be found [here](doc\software\html\index.html)
+The detailed documentation for this project can be found [here](doc/software/html/index.html)
 
 ## Contributing
 
