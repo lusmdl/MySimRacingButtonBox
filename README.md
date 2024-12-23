@@ -66,6 +66,8 @@ You can use the pre compiled hex file. Or you use compile it [yourself](Installa
 
 We welcome contributions from the community!
 
+First, read the [general contributing conventions for projects from me](CONTRIBUTING.md).
+
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature-branch`).
 3. Commit your changes (`git commit -am 'Add new feature'`).
