@@ -53,7 +53,6 @@ int main() {
 If the file exceeds the limits, reconsider the architecture.
 
 > **.cpp files** may exceed the limit of lines, but it is **not recommended** to split a `.cpp` file for a single class. Keep `.cpp` files as compact as possible while maintaining clarity and structure.
-{.is-warning}
 
 
 #### **File: `main.cpp`**
