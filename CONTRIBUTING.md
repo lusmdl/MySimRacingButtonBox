@@ -379,11 +379,11 @@ enum color_enum {
 
 ### `nocase`
 
-**Used for:** (`nocase` then `_` and then `nocase`)
+**Used `nocase` then `_` and then `nocase` for:**
 - enum 
 - structures
 
-**Used for:** (`nocase` then `_`)
+**Used `nocase` then `_` for:** 
 - class attributes
 
 **Pros:**
