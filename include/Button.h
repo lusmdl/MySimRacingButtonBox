@@ -16,7 +16,13 @@
 
 #include <stdint-gcc.h>
 
-/// @brief Defines the state of a button in a matrix.
+/**
+ * @brief  Represents the state of a button in the button matrix.
+ * 
+ * This struct holds information about a button.
+ * 
+ * @struct pod_button
+ */
 struct pod_button {
 
     uint8_t pushed; // Indicates whether the button was pushed (>= 1) or not (0).

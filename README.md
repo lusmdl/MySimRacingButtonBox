@@ -1,5 +1,5 @@
 
-# Sim Racing Button Controller
+# Sim Racing Button Box
 
 Welcome to the Sim Racing Button Controller repository! This project focuses on programming an ATmega328P microcontroller to manage a button matrix for sim racing setups. The controller communicates with an Arduino Micro via I2C, providing the states of 16 buttons in a 16-bit signal for an enhanced racing experience.
 
@@ -11,7 +11,7 @@ Welcome to the Sim Racing Button Controller repository! This project focuses on 
 
 ## Getting Started
 
-You can use the pre compiled hex file. Or you use compile it [yourself](Installation and Setup).
+You can use the pre compiled hex file. Or you use compile it yourself.
 
 ### Hardware Requirements
 
@@ -61,6 +61,9 @@ You can use the pre compiled hex file. Or you use compile it [yourself](Installa
 2. **Running the Code**:
    - Power up your setup.
    - The ATmega328P will continuously poll the button states and update the Arduino Micro via I2C.
+
+## Documentation
+The detailed documentation for this project can be found [here](\doc\software\html\index.html)
 
 ## Contributing
 

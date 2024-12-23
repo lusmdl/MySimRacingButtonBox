@@ -20,7 +20,10 @@ ComI2C::ComI2C(TwoWire &wire, Buttons &buttons) :
 {}
 
 /**
- * @brief Destructor for ComI2C.
+ * @brief  Destructor for the `ComI2C` class.
+ * 
+ * Cleans up resources used by the `ComI2C` instance. Since the `wire_` and `buttons_` 
+ * members are not dynamically allocated, no explicit deletion is necessary.
  */
 ComI2C::~ComI2C() {
     
@@ -30,9 +33,13 @@ ComI2C::~ComI2C() {
 }
 
 /**
- * @brief Initializes I2C communication.
- * @param addr I2C address.
- * @param requestEvent Function to call on I2C request. The function has to be static!!!
+ * @brief  Initializes the I2C communication for the `ComI2C` instance.
+ * 
+ * This method sets up the I2C address and assigns a callback function to be 
+ * executed when an I2C request is received.
+ * 
+ * @param  addr The I2C address to be used by the device.
+ * @param  function Pointer to the callback function to handle I2C requests.
  */
 void ComI2C::begin(uint8_t addr, void (*function)()) {
 
@@ -41,7 +48,19 @@ void ComI2C::begin(uint8_t addr, void (*function)()) {
 }
 
 /**
- * @brief Handles I2C events.
+ * @brief  Handles I2C communication events by sending the state of all buttons.
+ * 
+ * This method creates a 16-bit payload representing the state of all 16 buttons 
+ * in the button matrix. Each bit corresponds to a button, and the bit is set if 
+ * the button is pressed. The payload is sent over I2C.
+ * 
+ * @details
+ * - Each button's state is checked using `Buttons::getData`.
+ * - A bitwise operation sets the corresponding bit in the 16-bit payload for each pressed button.
+ * - Debug output (if enabled) shows the payload in hexadecimal format.
+ * - The payload is sent over I2C using `wire_->write`.
+ * 
+ * @note Ensure that `LUSMDL_DEBUGMODE` is defined to enable debug logs.
  */
 void ComI2C::event() {
 

@@ -1,6 +1,15 @@
 /**
  * @file main.cpp
- * @brief Main file for the project.
+ * @brief Demonstrates I2C communication with a button matrix using the `Buttons` and `ComI2C` classes.
+ * 
+ * This program initializes a button matrix and configures I2C communication to send the state of 
+ * the buttons to an I2C master device. The button matrix is continuously monitored, and the state 
+ * is sent whenever the master requests data.
+ * 
+ * @details
+ * - `Buttons`: Manages the button matrix.
+ * - `ComI2C`: Handles I2C communication.
+ * - The I2C address is defined in the `\include\ProjectConfig.hpp` file to avoid conflicts with other devices.
  */
 
 #include <Arduino.h>
@@ -8,18 +17,20 @@
 #include "WheelButtons/Buttons.hpp"
 #include "WheelButtons/ComI2C.hpp"
 
-/// @brief Manages button states
-Buttons buttons;
+// Global instances for the button matrix and I2C communication.
 
-/// @brief  Manages I2C communication
-/// @param  Wire from Wire.h lib
-/// @param  buttons has to be instaced
-/// @return 
+Buttons buttons;
 ComI2C i2c(Wire, buttons);
 
-/// @brief I2C request event handler
 void requestEvent();
 
+/**
+ * @brief  Arduino setup function. Runs once at startup.
+ * 
+ * This function initializes the Serial debug output (if enabled), the button 
+ * matrix, and the I2C communication. It ensures that the `Buttons` and `ComI2C` 
+ * classes are properly configured.
+ */
 void setup() {
 
   // put your setup code here, to run once:
@@ -38,6 +49,12 @@ void setup() {
 
 }
 
+/**
+ * @brief  Arduino loop function. Runs continuously after setup.
+ * 
+ * This function continuously listens for button events by calling the 
+ * `Buttons::listener` method.
+ */
 void loop() {
 
   // put your main code here, to run repeatedly:
@@ -46,6 +63,13 @@ void loop() {
   buttons.listener();
 }
 
+/**
+ * @brief  Handles I2C data requests from the master.
+ * 
+ * This function is called whenever the I2C master requests data. It retrieves 
+ * the state of all buttons from the `Buttons` class and sends it over I2C 
+ * using the `ComI2C` class.
+ */
 void requestEvent() {
 
   // get called every time the master requests data
