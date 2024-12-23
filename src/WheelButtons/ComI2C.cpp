@@ -6,9 +6,13 @@
 #include "ComI2C.hpp"
 
 /**
- * @brief Constructor for ComI2C.
- * @param wire Reference to the TwoWire object.
- * @param buttons Reference to the Buttons object.
+ * @brief  Constructs a `ComI2C` object to manage I2C communication with a Buttons instance.
+ * 
+ * This constructor initializes the I2C communication handler by associating it with a 
+ * `TwoWire` instance for I2C operations and a `Buttons` instance for handling button events.
+ * 
+ * @param  wire Reference to the `TwoWire` instance used for I2C communication.
+ * @param  buttons Reference to the `Buttons` instance to interact with the button matrix.
  */
 ComI2C::ComI2C(TwoWire &wire, Buttons &buttons) :
     wire_(&wire),

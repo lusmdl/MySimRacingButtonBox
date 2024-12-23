@@ -6,9 +6,18 @@
 #include "Buttons.hpp"
 
 /**
- * @brief Constructor for Buttons class.
+ * @brief  Initializes the Buttons class.
  * 
- * Initializes the row and column pins, key array, and keypad object.
+ * The constructor sets up the button matrix with specified row and column pins, 
+ * and initializes the keymap for detecting button presses. The key names are 
+ * derived using the `getmap` method to ensure correctness.
+ * 
+ * @details
+ * - `rowpins_`: Array of GPIO pins corresponding to the button matrix rows.
+ * - `columnspins_`: Array of GPIO pins corresponding to the button matrix columns.
+ * - `keyarray_`: A 2D array representing the button layout. Each key is mapped using `getmap`.
+ * - `keys_`: Handles key events using the mapped key array, row pins, and column pins.
+ * - `lasteventkey_`: Tracks the last key event (initialized to '\0').
  */
 Buttons::Buttons() :
     rowpins_{BTN_MATRIX_R1, BTN_MATRIX_R2, BTN_MATRIX_R3, BTN_MATRIX_R4},
@@ -24,9 +33,10 @@ Buttons::Buttons() :
 {}
 
 /**
- * @brief Destructor for Buttons class.
+ * @brief  Destructor for the Buttons class.
  * 
- * No dynamic memory allocation is required.
+ * Cleans up resources used by the Buttons class. Since no dynamic memory 
+ * allocation is performed, no specific cleanup operations are required.
  */
 Buttons::~Buttons() {
 
@@ -34,7 +44,14 @@ Buttons::~Buttons() {
 }
 
 /**
- * @brief Initializes the button matrix.
+ * @brief  Initializes the Buttons instance for operation.
+ * 
+ * This method configures the debounce and hold times for the button matrix.
+ * It prepares the `keys_` object to handle button presses with minimal delay.
+ * 
+ * @details
+ * - `setDebounceTime`: Sets the debounce time to 1 ms to filter out spurious presses.
+ * - `setHoldTime`: Sets the hold time to 1 ms to detect long presses quickly.
  */
 void Buttons::begin() {
 
@@ -43,9 +60,19 @@ void Buttons::begin() {
 }
 
 /**
- * @brief Listens and processes key presses.
+ * @brief  Polls and processes key press events for the button matrix.
  * 
- * Polls the keypad and processes key press events. Updates the data_ array with key press counts.
+ * This method continuously checks the state of keys, processes events such as 
+ * presses and releases, and updates the corresponding data. Debug information 
+ * is logged if debug mode is enabled.
+ * 
+ * @details
+ * - `getKey`: Retrieves the currently pressed key, if any.
+ * - `keyStateChanged`: Checks if the state of any key has changed.
+ * - `getState`: Determines the current state of the key (e.g., PRESSED or RELEASED).
+ * - Debug output includes the key events and their data before and after updates.
+ * 
+ * @note Debug mode (`LUSMDL_DEBUGMODE`) must be enabled to see the debug logs.
  */
 void Buttons::listener() {
 
@@ -106,10 +133,13 @@ void Buttons::listener() {
 }
 
 /**
- * @brief Gets the data of a specific button.
+ * @brief  Retrieves the data associated with a specific button.
  * 
- * @param button The button index.
- * @return pod_button The data of the specified button.
+ * This method returns the `pod_button` data for the button identified by the 
+ * specified index in the button matrix.
+ * 
+ * @param  button The index of the button in the matrix (0-based).
+ * @return The `pod_button` data structure containing the button's state and related information.
  */
 pod_button Buttons::getData(uint8_t button) {
 
@@ -117,10 +147,14 @@ pod_button Buttons::getData(uint8_t button) {
 }
 
 /**
- * @brief Maps a character key to an integer index.
+ * @brief  Maps a character key to its corresponding index in the button matrix.
  * 
- * @param key The character key.
- * @return int The integer index corresponding to the key.
+ * This method converts a key character (e.g., 'A', 'B', etc.) to a 0-based index 
+ * used in the button matrix. If the key is not defined, it returns `255` to 
+ * indicate an invalid key.
+ * 
+ * @param  key The character key to be mapped (e.g., 'A', 'B', ..., 'P').
+ * @return The corresponding index (0-15) for valid keys, or `255` for invalid keys.
  */
 int Buttons::getmap(char key) {
 
@@ -146,10 +180,14 @@ int Buttons::getmap(char key) {
 }
 
 /**
- * @brief Maps an integer index to a character key.
+ * @brief  Maps an index to its corresponding character key in the button matrix.
  * 
- * @param key The integer index.
- * @return char The character key corresponding to the index.
+ * This method converts a 0-based index (e.g., 0, 1, ..., 15) into its 
+ * corresponding character key (e.g., 'A', 'B', ..., 'P'). If the index is 
+ * invalid, it returns a null character (`'\0'`).
+ * 
+ * @param  key The index to be mapped (0-15).
+ * @return The corresponding character key for valid indices, or `'\0'` for invalid indices.
  */
 char Buttons::getmap(int key) {
 

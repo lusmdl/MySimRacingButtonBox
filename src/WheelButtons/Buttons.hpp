@@ -29,7 +29,7 @@ class Buttons {
         uint8_t columnspins_[BTN_MATRIX_L]; // Array to store column pins.
         char keyarray_[BTN_MATRIX_R][BTN_MATRIX_L]; // Array to store key mappings.
         Keypad keys_; // Keypad object.
-        char lasteventkey_; // store the Last event key -> otherwise i get in trouble
+        char lasteventkey_; // store the Last event key -> otherwise we get in trouble
 
         int getmap(char key);
         char getmap(int key);

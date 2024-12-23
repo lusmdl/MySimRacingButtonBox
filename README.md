@@ -18,6 +18,7 @@ You can use the pre compiled hex file. Or you use compile it [yourself](Installa
 - **ATmega328P Microcontroller**
 - 16 Mhz Oscilator
 - 12..22 pF Condansator
+- 100 µF Condansator for supply stability
 - **Button Matrix**: Up to 16 buttons
 
 ### Software Requirements

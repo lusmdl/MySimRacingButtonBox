@@ -29,13 +29,19 @@ void setup() {
   Serial.print("setup\n");
   #endif
 
+  // init buttons
   buttons.begin();
-  i2c.begin(8,requestEvent);
+
+  // init the I2C communication as a Slave
+  // it is important to change the Address in the '\include\ProjectConfig.hpp' so that no slave have the same adress
+  i2c.begin(I2C_ADDR,requestEvent);
+
 }
 
 void loop() {
 
   // put your main code here, to run repeatedly:
+  // the only task is to listen for any buttons
 
   buttons.listener();
 }
