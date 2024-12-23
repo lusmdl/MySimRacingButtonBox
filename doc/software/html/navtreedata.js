@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Button Box", "index.html", [
+  [ "Sim Racing Button Box", "index.html", [
     [ "Common Contributing Guidelines for C and C++ Projects", "md__c_o_n_t_r_i_b_u_t_i_n_g.html", [
       [ "Version Control", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md1", null ],
       [ "IDE Serrings", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md2", [
