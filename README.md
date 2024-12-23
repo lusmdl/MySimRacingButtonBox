@@ -36,7 +36,7 @@ You can use the pre compiled hex file. Or you use compile it [yourself](Installa
 2. **Clone the Repository**:
 
    ```sh
-   git clone https://github.com/lusmdl/MySimRacingWheeleButtons.git
+   git clone https://github.com/lusmdl/MySimRacingButtonBox.git
    ```
 
 3. **Open the Project**:
@@ -45,10 +45,6 @@ You can use the pre compiled hex file. Or you use compile it [yourself](Installa
 4. **Build and Upload**:
    - Connect your ATmega328P-based hardware.
    - Build and upload the code using PlatformIO:
-
-   ```sh
-   pio run --target upload
-   ```
 
 ### Arduino Micro Setup
 
