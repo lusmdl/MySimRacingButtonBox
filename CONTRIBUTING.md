@@ -350,11 +350,13 @@ void process_user_input(int user_input_value, double user_input_factor);
 
 ### `SCREAMING_SNAKE_CASE`
 
-**Used for:**
+**Used `SCREAMING_SNAKE_CASE` only for:**
 - Macros
 - Constants
-- Constant class attributes (ends with `_`, like always)
 - Enum elements
+
+**Used `SCREAMING_SNAKE_CASE` then `_` for:**
+- Constant class attributes
 
 **Pros:**
 - Can demonstrate your anger with text
