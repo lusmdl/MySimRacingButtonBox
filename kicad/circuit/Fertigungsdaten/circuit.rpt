@@ -1,4 +1,4 @@
-## Footprint report - date 2024-12-23T09:54:31+0100
+## Footprint report - date 2024-12-25T17:20:37+0100
 ## Created by KiCad version 8.0.7
 ## Unit = mm, Angle = deg.
 
@@ -12,7 +12,7 @@ $EndBOARD
 $MODULE C1
 footprint Capacitor_SMD:C_0402_1005Metric
 attribut smd
-position 221.800000 72.630000  orientation -90.00
+position 221.820000 72.630000  orientation -90.00
 layer front
 $PAD "1"
 Shape Roundrect Layer front
@@ -31,7 +31,7 @@ $EndMODULE  C1
 $MODULE C2
 footprint Capacitor_SMD:C_0402_1005Metric
 attribut smd
-position 221.800000 76.700000  orientation 90.00
+position 221.830000 76.700000  orientation 90.00
 layer front
 $PAD "1"
 Shape Roundrect Layer front
@@ -50,7 +50,7 @@ $EndMODULE  C2
 $MODULE C3
 footprint Capacitor_SMD:C_0402_1005Metric
 attribut smd
-position 239.200000 70.620000  orientation -90.00
+position 238.800000 72.520000  orientation -90.00
 layer front
 $PAD "1"
 Shape Roundrect Layer front
@@ -359,7 +359,7 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $EndMODULE  J1.4
 
-$MODULE J3
+$MODULE J2
 footprint Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD
 attribut smd
 position 243.825000 82.860000  orientation 180.00
@@ -397,6 +397,37 @@ $EndPAD
 $PAD "6"
 Shape Rect Layer front
 position  2.525000  2.540000  size  3.150000  1.000000  orientation 0.00
+drill  0.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$EndMODULE  J2
+
+$MODULE J3
+footprint Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD
+attribut smd
+position 222.035000 83.990000  orientation 0.00
+layer front
+$PAD "1"
+Shape Rect Layer front
+position -2.525000 -1.270000  size  3.150000  1.000000  orientation 0.00
+drill  0.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Rect Layer front
+position  2.525000 -1.270000  size  3.150000  1.000000  orientation 0.00
+drill  0.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "3"
+Shape Rect Layer front
+position -2.525000  1.270000  size  3.150000  1.000000  orientation 0.00
+drill  0.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "4"
+Shape Rect Layer front
+position  2.525000  1.270000  size  3.150000  1.000000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD

@@ -1,11 +1,11 @@
-### Footprint positions - created on 2024-12-23T09:54:23+0100 ###
+### Footprint positions - created on 2024-12-25T17:20:30+0100 ###
 ### Printed by KiCad version 8.0.7
 ## Unit = mm, Angle = deg.
 ## Side : top
 # Ref     Val           Package                                                         PosX       PosY       Rot  Side
-C1        12..22_pF     C_0402_1005Metric                                           221.8000   -72.6300  -90.0000  top
-C2        12..22_pF     C_0402_1005Metric                                           221.8000   -76.7000   90.0000  top
-C3        100_µF       C_0402_1005Metric                                           239.2000   -70.6200  -90.0000  top
+C1        12..22_pF     C_0402_1005Metric                                           221.8200   -72.6300  -90.0000  top
+C2        12..22_pF     C_0402_1005Metric                                           221.8300   -76.7000   90.0000  top
+C3        100_µF       C_0402_1005Metric                                           238.8000   -72.5200  -90.0000  top
 J1        4X4_Matrix    PinHeader_2x04_P2.54mm_Vertical_SMD                         222.0750   -58.5700    0.0000  top
 J1.1      2X2_Matrix_A  PinHeader_2x02_P2.54mm_Vertical_SMD                         225.0000   -48.0000    0.0000  top
 J1.1.1    Button_1      TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal   254.7500   -47.0000  -90.0000  top
@@ -17,7 +17,8 @@ J1.2.1    Button_3      TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizonta
 J1.2.2    Button_4      TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal   215.3500   -66.5000  -90.0000  top
 J1.3      2X2_Matrix_C  PinHeader_2x02_P2.54mm_Vertical_SMD                         225.0000   -91.0000    0.0000  top
 J1.4      2X2_Matrix_D  PinHeader_2x02_P2.54mm_Vertical_SMD                         237.0000   -91.0000  180.0000  top
-J3        AVR-ISP       PinHeader_2x03_P2.54mm_Vertical_SMD                         243.8250   -82.8600  180.0000  top
+J2        AVR-ISP       PinHeader_2x03_P2.54mm_Vertical_SMD                         243.8250   -82.8600  180.0000  top
+J3        I2C           PinHeader_2x02_P2.54mm_Vertical_SMD                         222.0350   -83.9900    0.0000  top
 J4        RJ45          RJ45_Molex_0855135013_Vertical                              248.7600   -60.2000   90.0000  top
 SW1       Reset         SW_Push_1P1T_NO_6x6mm_H9.5mm                                246.7250   -73.3500    0.0000  top
 U1        ATmega328P-P  DIP-28_W7.62mm                                              229.1300   -52.7400    0.0000  top

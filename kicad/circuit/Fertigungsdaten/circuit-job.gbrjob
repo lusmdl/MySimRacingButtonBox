@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "8.0.7"
     },
-    "CreationDate": "2024-12-23T09:54:04+01:00"
+    "CreationDate": "2024-12-25T17:19:13+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "circuit",
       "GUID": "63697263-7569-4742-9e6b-696361645f70",
-      "Revision": "rev?"
+      "Revision": "v1.1.0"
     },
     "Size": {
       "X": 49.75,
