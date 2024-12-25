@@ -21,6 +21,9 @@ You can use the pre compiled hex file. Or you use compile it yourself.
 - 100 µF Condansator for supply stability
 - **Button Matrix**: Up to 16 buttons
 
+> Example PCB for the project
+![PCBA](https://github.com/lusmdl/MySimRacingButtonBox/blob/main/doc/hardware/pictures/pcba.png)
+
 ### Software Requirements
 
 - [**PlatformIO**](https://platformio.org/install/ide?install=vscode): Used for programming the ATmega328P microcontroller.
