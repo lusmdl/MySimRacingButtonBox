@@ -1,13 +1,20 @@
 
 # Sim Racing Button Box
 
-Welcome to the Sim Racing Button Controller repository! This project focuses on programming an ATmega328P microcontroller to manage a button matrix for sim racing setups. The controller communicates with an Arduino Micro via I2C, providing the states of 16 buttons in a 16-bit signal for an enhanced racing experience.
+Welcome to the Sim Racing Button Controller repository!  
+
+This project is built around an ATmega328P microcontroller, which is configured to manage a button matrix tailored for sim racing setups. The system uses I2C communication, where the Arduino Micro acts as the **master** and the ATmega328P functions as the **slave**. This ensures precise control and synchronization between the components.  
+
+The ATmega328P transmits a 16-bit signal representing the states of up to 16 buttons **only when requested by the Arduino Micro**. This on-demand communication minimizes latency and ensures efficient data transfer. Additionally, the PCB includes support for a joystick connection, expanding its versatility.  
+
+This project complements [MySimRacingCore](https://github.com/lusmdl/MySimRacingCore), which serves as the brain of the entire sim racing system. Together, they deliver a modular and high-performance solution for sim racing enthusiasts.
 
 ## Features
 
-- 16 buttons
-- I2C communication with Arduino Micro
-- Efficient button state management
+- Support for up to 16 buttons in a matrix configuration
+- Seamless I2C communication with the Arduino Micro for precise control
+- Fast and effective button state management with Keypad Library
+- Joystick integration via the PCB's RJ45 jack, reducing wiring complexity
 
 ## Getting Started
 
@@ -20,8 +27,9 @@ You can use the pre compiled hex file. Or you use compile it yourself.
 - 12..22 pF Condansator
 - 100 µF Condansator for supply stability
 - **Button Matrix**: Up to 16 buttons
+- **The PCBA from master project**: [MySimRacingCore](https://github.com/lusmdl/MySimRacingCore)
 
-> Example PCB for the project
+> Example PCB for this project
 ![PCBA](https://github.com/lusmdl/MySimRacingButtonBox/blob/main/doc/hardware/pictures/pcba.png)
 
 ### Software Requirements
@@ -31,42 +39,50 @@ You can use the pre compiled hex file. Or you use compile it yourself.
 - [**AVR Lib**](https://github.com/avrdudes/avr-libc.git): standard lib with PlatformIO.
 - [**Keypad Library**](https://github.com/Chris--A/Keypad.git): Used for the 4x4 Matrix
 
-## Installation and Setup
 
-1. **Install PlatformIO**:
-   - Follow the [installation guide](https://platformio.org/install) to set up PlatformIO in your preferred environment (VSCode, Atom, etc.).
+### Software Installation and Setup
 
-2. **Clone the Repository**:
+You can either use the precompiled HEX file or compile the firmware yourself. Follow the steps below for a smooth setup:
+
+1. **Install PlatformIO**  
+   - Set up PlatformIO in your preferred development environment (e.g., VSCode or Atom) by following the official [installation guide](https://platformio.org/install).  
+
+2. **Clone the Repository**  
 
    ```sh
    git clone https://github.com/lusmdl/MySimRacingButtonBox.git
-   ```
+   ```  
 
-3. **Open the Project**:
-   - Open the cloned repository folder in your PlatformIO environment.
+3. **Open the Project**  
+   - Open the cloned repository in your PlatformIO environment.  
 
-4. **Build and Upload**:
-   - Connect your ATmega328P-based hardware.
-   - Build and upload the code using PlatformIO:
+4. **Build and Upload**  
+   - Prepare your ATmega328P-based PCB for flashing. It’s recommended to first flash the firmware onto an Arduino Uno and then transfer the chip to your custom environment.  
+   - Build and upload the code using PlatformIO:  
 
-### Arduino Micro Setup
+   ```sh
+   pio run --target upload
+   ```  
 
-1. **I2C Communication**:
-   - Ensure the Arduino Micro is set up to receive I2C data from the ATmega328P.
-   - The Arduino Micro will request the 16-bit button state data from the ATmega328P.
+
+### Hardware Setup
+
+1. Assemble the PCB according to the provided design.  
+2. Ensure all components, such as the button matrix and joystick, are correctly connected.
 
 ## Usage
 
-1. **Connecting the Hardware**:
-   - Connect the button matrix to the ATmega328P as per your configuration.
-   - Connect the ATmega328P to the Arduino Micro via I2C.
+1. **Hardware Connection**  
+   - Connect the button matrix to the ATmega328P as per the configuration.  
+   - Establish an I2C connection between the ATmega328P and the Arduino Micro.  
 
-2. **Running the Code**:
-   - Power up your setup.
-   - The ATmega328P will continuously poll the button states and update the Arduino Micro via I2C.
+2. **Running the Firmware**  
+   - Power on your system.  
+   - The ATmega328P will only send a 16-bit signal to the Arduino Micro when requested over I2C, ensuring efficient communication.
 
 ## Documentation
-The detailed documentation for this project can be found under [doc/software/html/index.html](doc/software/html/index.html)
+
+- **Software**: [doc/software/html/index.html](doc/software/html/index.html)
 
 ## Contributing
 
