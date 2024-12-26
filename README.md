@@ -30,7 +30,7 @@ You can use the pre compiled hex file. Or you use compile it yourself.
 - **The PCBA from master project**: [MySimRacingCore](https://github.com/lusmdl/MySimRacingCore)
 
 > Example PCB for this project
-![PCBA](https://github.com/lusmdl/MySimRacingButtonBox/blob/main/doc/hardware/pictures/pcba.png)
+![PCBA](/doc/hardware/pictures/pcba.png)
 
 ### Software Requirements
 
