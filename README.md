@@ -20,8 +20,6 @@ This project complements [MySimRacingCore](https://github.com/lusmdl/MySimRacing
 
 ## Getting Started
 
-You can use the pre compiled hex file. Or you use compile it yourself.
-
 ### Hardware Requirements
 
 - **ATmega328P Microcontroller**
@@ -44,7 +42,8 @@ You can use the pre compiled hex file. Or you use compile it yourself.
 
 ### Software Installation and Setup
 
-You can either use the precompiled HEX file or compile the firmware yourself. Follow the steps below for a smooth setup:
+> You can either use the precompiled HEX file or compile the firmware yourself.
+
 
 1. **Install PlatformIO**  
    - Set up PlatformIO in your preferred development environment (e.g., VSCode or Atom) by following the official [installation guide](https://platformio.org/install).  
