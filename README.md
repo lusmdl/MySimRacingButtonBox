@@ -3,7 +3,9 @@
 
 Welcome to the Sim Racing Button Controller repository!  
 
-This project is built around an ATmega328P microcontroller, which is configured to manage a button matrix tailored for sim racing setups. The system uses I2C communication, where the Arduino Micro acts as the **master** and the ATmega328P functions as the **slave**. This ensures precise control and synchronization between the components.  
+This project is built around an ATmega328P microcontroller, which is configured to manage a button matrix tailored for sim racing setups. 
+The system uses I2C communication, where the Arduino Micro acts as the **master** and the ATmega328P functions as the **slave** (Address is standard 8).
+This ensures precise control and synchronization between the components.  
 
 The ATmega328P transmits a 16-bit signal representing the states of up to 16 buttons **only when requested by the Arduino Micro**. This on-demand communication minimizes latency and ensures efficient data transfer. Additionally, the PCB includes support for a joystick connection, expanding its versatility.  
 
@@ -53,8 +55,11 @@ You can either use the precompiled HEX file or compile the firmware yourself. Fo
    git clone https://github.com/lusmdl/MySimRacingButtonBox.git
    ```  
 
-3. **Open the Project**  
-   - Open the cloned repository in your PlatformIO environment.  
+**3. Open the Project**  
+- Open the cloned repository in your PlatformIO environment.  
+- Update the line `#define I2C_ADDR            8` in [ProjectConfig.hpp](/include/ProjectConfig.hpp) to match your I²C master device configuration.
+
+> The default address is 8. If you intend to connect this device twice, use addresses 8 and 9. The master will handle the rest.
 
 4. **Build and Upload**  
    - Prepare your ATmega328P-based PCB for flashing. It’s recommended to first flash the firmware onto an Arduino Uno and then transfer the chip to your custom environment.  
