@@ -6192,7 +6192,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100 µF"
+		(property "Value" "10 µF"
 			(at 35.56 88.8935 0)
 			(effects
 				(font
@@ -6201,7 +6201,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 33.02 87.63 0)
 			(effects
 				(font
