@@ -1,4 +1,4 @@
-## Footprint report - date 2024-12-25T17:20:37+0100
+## Footprint report - date 2025-01-13T22:25:05+0100
 ## Created by KiCad version 8.0.7
 ## Unit = mm, Angle = deg.
 
@@ -48,19 +48,19 @@ $EndPAD
 $EndMODULE  C2
 
 $MODULE C3
-footprint Capacitor_SMD:C_0402_1005Metric
+footprint Capacitor_SMD:C_1206_3216Metric
 attribut smd
-position 238.800000 72.520000  orientation -90.00
+position 225.325000 67.300000  orientation 0.00
 layer front
 $PAD "1"
 Shape Roundrect Layer front
-position -0.480000  0.000000  size  0.560000  0.620000  orientation 360.00
+position -1.475000  0.000000  size  1.150000  1.800000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
 $PAD "2"
 Shape Roundrect Layer front
-position  0.480000  0.000000  size  0.560000  0.620000  orientation 360.00
+position  1.475000  0.000000  size  1.150000  1.800000  orientation 0.00
 drill  0.000000
 shape_offset  0.000000  0.000000
 $EndPAD
@@ -69,7 +69,7 @@ $EndMODULE  C3
 $MODULE J1
 footprint Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical_SMD
 attribut smd
-position 222.075000 58.570000  orientation 0.00
+position 222.075000 57.345000  orientation 0.00
 layer front
 $PAD "1"
 Shape Rect Layer front
@@ -494,6 +494,49 @@ shape_offset  0.000000  0.000000
 $EndPAD
 $EndMODULE  J4
 
+$MODULE J5
+footprint Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD
+attribut smd
+position 245.875000 72.940000  orientation 0.00
+layer front
+$PAD "1"
+Shape Rect Layer front
+position -2.525000 -2.540000  size  3.150000  1.000000  orientation 0.00
+drill  0.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "2"
+Shape Rect Layer front
+position  2.525000 -2.540000  size  3.150000  1.000000  orientation 0.00
+drill  0.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "3"
+Shape Rect Layer front
+position -2.525000  0.000000  size  3.150000  1.000000  orientation 0.00
+drill  0.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "4"
+Shape Rect Layer front
+position  2.525000  0.000000  size  3.150000  1.000000  orientation 0.00
+drill  0.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "5"
+Shape Rect Layer front
+position -2.525000  2.540000  size  3.150000  1.000000  orientation 0.00
+drill  0.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$PAD "6"
+Shape Rect Layer front
+position  2.525000  2.540000  size  3.150000  1.000000  orientation 0.00
+drill  0.000000
+shape_offset  0.000000  0.000000
+$EndPAD
+$EndMODULE  J5
+
 $MODULE REF**
 footprint MountingHole:MountingHole_2.2mm_M2
 attribut virtual
@@ -545,37 +588,6 @@ drill  2.200000
 shape_offset  0.000000  0.000000
 $EndPAD
 $EndMODULE  REF**
-
-$MODULE SW1
-footprint Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm
-attribut smd
-position 246.725000 73.350000  orientation 0.00
-layer front
-$PAD "1"
-Shape Rect Layer front
-position -3.975000 -2.250000  size  1.550000  1.300000  orientation 0.00
-drill  0.000000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "1"
-Shape Rect Layer front
-position  3.975000 -2.250000  size  1.550000  1.300000  orientation 0.00
-drill  0.000000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Rect Layer front
-position -3.975000  2.250000  size  1.550000  1.300000  orientation 0.00
-drill  0.000000
-shape_offset  0.000000  0.000000
-$EndPAD
-$PAD "2"
-Shape Rect Layer front
-position  3.975000  2.250000  size  1.550000  1.300000  orientation 0.00
-drill  0.000000
-shape_offset  0.000000  0.000000
-$EndPAD
-$EndMODULE  SW1
 
 $MODULE U1
 footprint Package_DIP:DIP-28_W7.62mm
