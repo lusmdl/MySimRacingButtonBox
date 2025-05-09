@@ -4,7 +4,7 @@
 Welcome to the Sim Racing Button Controller repository!  
 
 This project is built around an ATmega328P microcontroller, which is configured to manage a button matrix tailored for sim racing setups. 
-The system uses I2C communication, where the Arduino Micro acts as the **master** and the ATmega328P functions as the **slave** (Address is standard 8).
+The system uses I2C communication, where the Arduino Micro acts as the **master** and the ATmega328P functions as the **slave** (Address standard 8).
 This ensures precise control and synchronization between the components.  
 
 The ATmega328P transmits a 16-bit signal representing the states of up to 16 buttons **only when requested by the Arduino Micro**. This on-demand communication minimizes latency and ensures efficient data transfer. Additionally, the PCB includes support for a joystick connection, expanding its versatility.  
