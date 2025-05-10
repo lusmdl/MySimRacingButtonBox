@@ -7,7 +7,7 @@
 	(title_block
 		(title "Button Box")
 		(date "2024-12-23")
-		(rev "v1.1.0")
+		(rev "v1.1.1")
 		(company "https://github.com/lusmdl")
 	)
 	(lib_symbols
@@ -4559,7 +4559,6 @@
 	)
 	(label "GND"
 		(at 121.92 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4570,7 +4569,6 @@
 	)
 	(label "R4"
 		(at 129.54 140.97 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4581,7 +4579,6 @@
 	)
 	(label "L1"
 		(at 129.54 110.49 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4592,7 +4589,6 @@
 	)
 	(label "MISO"
 		(at 82.55 72.39 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4603,7 +4599,6 @@
 	)
 	(label "+5V"
 		(at 128.27 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4614,7 +4609,6 @@
 	)
 	(label "R4"
 		(at 129.54 152.4 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4625,7 +4619,6 @@
 	)
 	(label "R1"
 		(at 129.54 190.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4636,7 +4629,6 @@
 	)
 	(label "GND"
 		(at 158.75 85.09 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4647,7 +4639,6 @@
 	)
 	(label "SDA"
 		(at 128.27 95.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4658,7 +4649,6 @@
 	)
 	(label "RESET"
 		(at 93.98 43.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4669,7 +4659,6 @@
 	)
 	(label "RY"
 		(at 158.75 97.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4680,7 +4669,6 @@
 	)
 	(label "L4"
 		(at 83.82 113.03 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4691,7 +4679,6 @@
 	)
 	(label "L4"
 		(at 129.54 147.32 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4702,7 +4689,6 @@
 	)
 	(label "L4"
 		(at 129.54 124.46 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4713,7 +4699,6 @@
 	)
 	(label "L1"
 		(at 129.54 133.35 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4724,7 +4709,6 @@
 	)
 	(label "MOSI"
 		(at 93.98 38.1 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4735,7 +4719,6 @@
 	)
 	(label "R1"
 		(at 129.54 127 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4746,7 +4729,6 @@
 	)
 	(label "+5V"
 		(at 147.32 67.31 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4757,7 +4739,6 @@
 	)
 	(label "R3"
 		(at 129.54 138.43 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4768,7 +4749,6 @@
 	)
 	(label "R2"
 		(at 129.54 171.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4779,7 +4759,6 @@
 	)
 	(label "R2"
 		(at 129.54 129.54 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4790,7 +4769,6 @@
 	)
 	(label "R2"
 		(at 129.54 177.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4801,7 +4779,6 @@
 	)
 	(label "XTAL2"
 		(at 110.49 64.77 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4812,7 +4789,6 @@
 	)
 	(label "L3"
 		(at 129.54 121.92 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4823,7 +4799,6 @@
 	)
 	(label "RX"
 		(at 158.75 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4834,7 +4809,6 @@
 	)
 	(label "R1"
 		(at 129.54 158.75 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4845,7 +4819,6 @@
 	)
 	(label "Switch"
 		(at 156.21 102.87 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4856,7 +4829,6 @@
 	)
 	(label "GND"
 		(at 128.27 90.17 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4867,7 +4839,6 @@
 	)
 	(label "R2"
 		(at 129.54 118.11 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4878,7 +4849,6 @@
 	)
 	(label "L3"
 		(at 83.82 110.49 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4889,7 +4859,6 @@
 	)
 	(label "Switch"
 		(at 146.05 74.93 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4900,7 +4869,6 @@
 	)
 	(label "L2"
 		(at 129.54 113.03 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4911,7 +4879,6 @@
 	)
 	(label "L4"
 		(at 129.54 187.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4922,7 +4889,6 @@
 	)
 	(label "L1"
 		(at 83.82 105.41 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4933,7 +4899,6 @@
 	)
 	(label "SDA"
 		(at 158.75 95.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4944,7 +4909,6 @@
 	)
 	(label "R2"
 		(at 83.82 118.11 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4955,7 +4919,6 @@
 	)
 	(label "L3"
 		(at 129.54 181.61 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4966,7 +4929,6 @@
 	)
 	(label "+5V"
 		(at 158.75 90.17 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4977,7 +4939,6 @@
 	)
 	(label "L1"
 		(at 129.54 168.91 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4988,7 +4949,6 @@
 	)
 	(label "GND"
 		(at 121.92 64.77 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4999,7 +4959,6 @@
 	)
 	(label "L1"
 		(at 129.54 156.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5010,7 +4969,6 @@
 	)
 	(label "XTAL1"
 		(at 82.55 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5021,7 +4979,6 @@
 	)
 	(label "SCK"
 		(at 82.55 74.93 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5032,7 +4989,6 @@
 	)
 	(label "MOSI"
 		(at 82.55 69.85 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5043,7 +4999,6 @@
 	)
 	(label "L2"
 		(at 129.54 135.89 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5054,7 +5009,6 @@
 	)
 	(label "SCK"
 		(at 93.98 40.64 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5065,7 +5019,6 @@
 	)
 	(label "R3"
 		(at 129.54 149.86 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5076,7 +5029,6 @@
 	)
 	(label "RESET"
 		(at 83.82 100.33 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5087,7 +5039,6 @@
 	)
 	(label "R3"
 		(at 83.82 120.65 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5098,7 +5049,6 @@
 	)
 	(label "R4"
 		(at 83.82 123.19 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5109,7 +5059,6 @@
 	)
 	(label "R1"
 		(at 129.54 165.1 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5120,7 +5069,6 @@
 	)
 	(label "SCL"
 		(at 128.27 97.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5131,7 +5079,6 @@
 	)
 	(label "SDA"
 		(at 83.82 95.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5142,7 +5089,6 @@
 	)
 	(label "L2"
 		(at 83.82 107.95 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5153,7 +5099,6 @@
 	)
 	(label "SCL"
 		(at 158.75 100.33 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5164,7 +5109,6 @@
 	)
 	(label "XTAL2"
 		(at 82.55 80.01 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5175,7 +5119,6 @@
 	)
 	(label "SCL"
 		(at 83.82 97.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5186,7 +5129,6 @@
 	)
 	(label "GND"
 		(at 147.32 64.77 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5197,7 +5139,6 @@
 	)
 	(label "R1"
 		(at 129.54 184.15 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5208,7 +5149,6 @@
 	)
 	(label "L2"
 		(at 129.54 175.26 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5219,7 +5159,6 @@
 	)
 	(label "L3"
 		(at 129.54 144.78 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5230,7 +5169,6 @@
 	)
 	(label "GND"
 		(at 66.04 132.08 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5241,7 +5179,6 @@
 	)
 	(label "MISO"
 		(at 93.98 35.56 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5252,7 +5189,6 @@
 	)
 	(label "R1"
 		(at 83.82 115.57 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5263,7 +5199,6 @@
 	)
 	(label "R1"
 		(at 129.54 115.57 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5274,7 +5209,6 @@
 	)
 	(label "RX"
 		(at 147.32 69.85 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5285,7 +5219,6 @@
 	)
 	(label "L2"
 		(at 129.54 162.56 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5296,7 +5229,6 @@
 	)
 	(label "XTAL1"
 		(at 110.49 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5307,7 +5239,6 @@
 	)
 	(label "RY"
 		(at 147.32 72.39 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

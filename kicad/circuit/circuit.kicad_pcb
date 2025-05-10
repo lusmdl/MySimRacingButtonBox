@@ -10,7 +10,7 @@
 	(title_block
 		(title "Button Box")
 		(date "2024-12-23")
-		(rev "v1.1.0")
+		(rev "v1.1.1")
 		(company "https://github.com/lusmdl")
 	)
 	(layers
