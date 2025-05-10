@@ -1,5 +1,11 @@
 var searchData=
 [
-  ['naming_20conventions_0',['Naming Conventions',['../md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md16',1,'']]],
-  ['nocase_20tt_1',['&lt;tt&gt;nocase&lt;/tt&gt;',['../md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md24',1,'']]]
+  ['ide_20serrings_0',['IDE Serrings',['../md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md2',1,'']]],
+  ['improvements_20strong_20that_20don’t_20change_20existing_20functionality_1',['&lt;strong&gt;PATCH &lt;tt&gt;v1.0.0 → v1.0.1&lt;/tt&gt;&lt;/strong&gt;: Incremented for &lt;strong&gt;bug fixes&lt;/strong&gt; or &lt;strong&gt;small improvements&lt;/strong&gt; that don’t change existing functionality.',['../md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md42',1,'']]],
+  ['incompatible_20changes_20strong_20breaking_20changes_2',['&lt;strong&gt;MAJOR &lt;tt&gt;v1.0.0 → v2.0.0&lt;/tt&gt;&lt;/strong&gt;: Incremented for &lt;strong&gt;backward-incompatible changes&lt;/strong&gt; (breaking changes).',['../md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md40',1,'']]],
+  ['incremented_20for_20strong_20adding_20new_20features_20strong_20that_20are_20strong_20backward_20compatible_20strong_20doesn’t_20break_20existing_20code_3',['&lt;strong&gt;MINOR &lt;tt&gt;v1.0.0 → v1.1.0&lt;/tt&gt;&lt;/strong&gt;: Incremented for &lt;strong&gt;adding new features&lt;/strong&gt; that are &lt;strong&gt;backward-compatible&lt;/strong&gt; (doesn’t break existing code).',['../md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md41',1,'']]],
+  ['incremented_20for_20strong_20backward_20incompatible_20changes_20strong_20breaking_20changes_4',['&lt;strong&gt;MAJOR &lt;tt&gt;v1.0.0 → v2.0.0&lt;/tt&gt;&lt;/strong&gt;: Incremented for &lt;strong&gt;backward-incompatible changes&lt;/strong&gt; (breaking changes).',['../md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md40',1,'']]],
+  ['incremented_20for_20strong_20bug_20fixes_20strong_20or_20strong_20small_20improvements_20strong_20that_20don’t_20change_20existing_20functionality_5',['&lt;strong&gt;PATCH &lt;tt&gt;v1.0.0 → v1.0.1&lt;/tt&gt;&lt;/strong&gt;: Incremented for &lt;strong&gt;bug fixes&lt;/strong&gt; or &lt;strong&gt;small improvements&lt;/strong&gt; that don’t change existing functionality.',['../md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md42',1,'']]],
+  ['indentation_6',['Indentation',['../md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md3',1,'']]],
+  ['installation_20and_20setup_7',['Software Installation and Setup',['../md__r_e_a_d_m_e.html#autotoc_md49',1,'']]]
 ];

@@ -69,21 +69,25 @@ var NAVTREE =
       [ "Documentation", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md36", [
         [ "Doxygen Syntax Overview", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md37", null ]
       ] ],
-      [ "Pull Requests", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md38", null ]
+      [ "Pull Requests", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md38", null ],
+      [ "Versioning Explanation", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md39", [
+        [ "MAJOR v1.0.0 → v2.0.0: Incremented for backward-incompatible changes (breaking changes).", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md40", null ],
+        [ "MINOR v1.0.0 → v1.1.0: Incremented for adding new features that are backward-compatible (doesn’t brea...", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md41", null ],
+        [ "PATCH v1.0.0 → v1.0.1: Incremented for bug fixes or small improvements that don’t change existing fun...", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md42", null ]
+      ] ]
     ] ],
     [ "Sim Racing Button Box", "md__r_e_a_d_m_e.html", [
-      [ "Features", "md__r_e_a_d_m_e.html#autotoc_md41", null ],
-      [ "Getting Started", "md__r_e_a_d_m_e.html#autotoc_md42", [
-        [ "Hardware Requirements", "md__r_e_a_d_m_e.html#autotoc_md43", null ],
-        [ "Software Requirements", "md__r_e_a_d_m_e.html#autotoc_md44", null ]
+      [ "Features", "md__r_e_a_d_m_e.html#autotoc_md45", null ],
+      [ "Getting Started", "md__r_e_a_d_m_e.html#autotoc_md46", [
+        [ "Hardware Requirements", "md__r_e_a_d_m_e.html#autotoc_md47", null ],
+        [ "Software Requirements", "md__r_e_a_d_m_e.html#autotoc_md48", null ],
+        [ "Software Installation and Setup", "md__r_e_a_d_m_e.html#autotoc_md49", null ],
+        [ "Hardware Setup", "md__r_e_a_d_m_e.html#autotoc_md50", null ]
       ] ],
-      [ "Installation and Setup", "md__r_e_a_d_m_e.html#autotoc_md45", [
-        [ "Arduino Micro Setup", "md__r_e_a_d_m_e.html#autotoc_md46", null ]
-      ] ],
-      [ "Usage", "md__r_e_a_d_m_e.html#autotoc_md47", null ],
-      [ "Documentation", "md__r_e_a_d_m_e.html#autotoc_md48", null ],
-      [ "Contributing", "md__r_e_a_d_m_e.html#autotoc_md49", null ],
-      [ "License", "md__r_e_a_d_m_e.html#autotoc_md50", null ]
+      [ "Usage", "md__r_e_a_d_m_e.html#autotoc_md51", null ],
+      [ "Documentation", "md__r_e_a_d_m_e.html#autotoc_md52", null ],
+      [ "Contributing", "md__r_e_a_d_m_e.html#autotoc_md53", null ],
+      [ "License", "md__r_e_a_d_m_e.html#autotoc_md54", null ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],

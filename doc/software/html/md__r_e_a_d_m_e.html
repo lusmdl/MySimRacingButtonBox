@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sim Racing Button Box<span id="projectnumber">&#160;1.1.0</span>
+   <div id="projectname">Sim Racing Button Box<span id="projectnumber">&#160;1.1.1</span>
    </div>
    <div id="projectbrief">This project manages a 4x4 button matrix and communicates its state via I2C.</div>
   </td>
@@ -95,18 +95,24 @@ $(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizable(); });
   <div class="headertitle"><div class="title">Sim Racing Button Box</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md40"></a> Welcome to the Sim Racing Button Controller repository! This project focuses on programming an ATmega328P microcontroller to manage a button matrix for sim racing setups. The controller communicates with an Arduino Micro via I2C, providing the states of 16 buttons in a 16-bit signal for an enhanced racing experience.</p>
-<h1><a class="anchor" id="autotoc_md41"></a>
+<div class="textblock"><p><a class="anchor" id="autotoc_md44"></a> Welcome to the Sim Racing Button Controller repository! <br  />
+</p>
+<p>This project is built around an ATmega328P microcontroller, which is configured to manage a button matrix tailored for sim racing setups. The system uses I2C communication, where the Arduino Micro acts as the <b>master</b> and the ATmega328P functions as the <b>slave</b> (Address standard 8). This ensures precise control and synchronization between the components. <br  />
+</p>
+<p>The ATmega328P transmits a 16-bit signal representing the states of up to 16 buttons <b>only when requested by the Arduino Micro</b>. This on-demand communication minimizes latency and ensures efficient data transfer. Additionally, the PCB includes support for a joystick connection, expanding its versatility. <br  />
+</p>
+<p>This project complements <a href="https://github.com/lusmdl/MySimRacingCore">MySimRacingCore</a>, which serves as the brain of the entire sim racing system. Together, they deliver a modular and high-performance solution for sim racing enthusiasts.</p>
+<h1><a class="anchor" id="autotoc_md45"></a>
 Features</h1>
 <ul>
-<li>16 buttons</li>
-<li>I2C communication with Arduino Micro</li>
-<li>Efficient button state management</li>
+<li>Support for up to 16 buttons in a matrix configuration</li>
+<li>Seamless I2C communication with the Arduino Micro for precise control</li>
+<li>Fast and effective button state management with Keypad Library</li>
+<li>Joystick integration via the PCB's RJ45 jack, reducing wiring complexity</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md42"></a>
+<h1><a class="anchor" id="autotoc_md46"></a>
 Getting Started</h1>
-<p>You can use the pre compiled hex file. Or you use compile it yourself.</p>
-<h2><a class="anchor" id="autotoc_md43"></a>
+<h2><a class="anchor" id="autotoc_md47"></a>
 Hardware Requirements</h2>
 <ul>
 <li><b>ATmega328P Microcontroller</b></li>
@@ -114,8 +120,13 @@ Hardware Requirements</h2>
 <li>12..22 pF Condansator</li>
 <li>100 µF Condansator for supply stability</li>
 <li><b>Button Matrix</b>: Up to 16 buttons</li>
+<li><b>The PCBA from master project</b>: <a href="https://github.com/lusmdl/MySimRacingCore">MySimRacingCore</a></li>
 </ul>
-<h2><a class="anchor" id="autotoc_md44"></a>
+<blockquote class="doxtable">
+<p>&zwj;Example PCB for this project </p>
+</blockquote>
+<p><img src="/doc/hardware/pictures/pcba.png" alt="PCBA" class="inline"/></p>
+<h2><a class="anchor" id="autotoc_md48"></a>
 Software Requirements</h2>
 <ul>
 <li><a href="https://platformio.org/install/ide?install=vscode"><b>PlatformIO</b></a>: Used for programming the ATmega328P microcontroller.</li>
@@ -123,53 +134,75 @@ Software Requirements</h2>
 <li><a href="https://github.com/avrdudes/avr-libc.git"><b>AVR Lib</b></a>: standard lib with PlatformIO.</li>
 <li><a href="https://github.com/Chris--A/Keypad.git"><b>Keypad Library</b></a>: Used for the 4x4 Matrix</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md45"></a>
-Installation and Setup</h1>
+<h2><a class="anchor" id="autotoc_md49"></a>
+Software Installation and Setup</h2>
+<blockquote class="doxtable">
+<p>&zwj;You can either use the precompiled HEX file or compile the firmware yourself. </p>
+</blockquote>
 <ol type="1">
-<li><b>Install PlatformIO</b>:<ul>
-<li>Follow the <a href="https://platformio.org/install">installation guide</a> to set up PlatformIO in your preferred environment (VSCode, Atom, etc.).</li>
+<li><b>Install PlatformIO</b> <br  />
+<ul>
+<li>Set up PlatformIO in your preferred development environment (e.g., VSCode or Atom) by following the official <a href="https://platformio.org/install">installation guide</a>. <br  />
+</li>
 </ul>
 </li>
-<li><p class="startli"><b>Clone the Repository</b>:</p>
+<li><p class="startli"><b>Clone the Repository</b> <br  />
+</p>
 <div class="fragment"><div class="line">git clone https://github.com/lusmdl/MySimRacingButtonBox.git</div>
 </div><!-- fragment --></li>
-<li><b>Open the Project</b>:<ul>
-<li>Open the cloned repository folder in your PlatformIO environment.</li>
-</ul>
-</li>
-<li><b>Build and Upload</b>:<ul>
-<li>Connect your ATmega328P-based hardware.</li>
-<li>Build and upload the code using PlatformIO:</li>
-</ul>
-</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md46"></a>
-Arduino Micro Setup</h2>
+<p><b>3. Open the Project</b> <br  />
+</p><ul>
+<li>Open the cloned repository in your PlatformIO environment. <br  />
+</li>
+<li>Update the line <code>#define I2C_ADDR 8</code> in <a href="/include/ProjectConfig.hpp">ProjectConfig.hpp</a> to match your I²C master device configuration.</li>
+</ul>
+<blockquote class="doxtable">
+<p>&zwj;The default address is 8. If you intend to connect this device twice, use addresses 8 and 9. The master will handle the rest. </p>
+</blockquote>
 <ol type="1">
-<li><b>I2C Communication</b>:<ul>
-<li>Ensure the Arduino Micro is set up to receive I2C data from the ATmega328P.</li>
-<li>The Arduino Micro will request the 16-bit button state data from the ATmega328P.</li>
-</ul>
+<li><p class="startli"><b>Build and Upload</b> <br  />
+</p><ul>
+<li>Prepare your ATmega328P-based PCB for flashing. It’s recommended to first flash the firmware onto an Arduino Uno and then transfer the chip to your custom environment. <br  />
 </li>
+<li>Build and upload the code using PlatformIO: <br  />
+</li>
+</ul>
+<div class="fragment"><div class="line">pio run --target upload</div>
+</div><!-- fragment --></li>
 </ol>
-<h1><a class="anchor" id="autotoc_md47"></a>
+<h2><a class="anchor" id="autotoc_md50"></a>
+Hardware Setup</h2>
+<ol type="1">
+<li>Assemble the PCB according to the provided design. <br  />
+</li>
+<li>Ensure all components, such as the button matrix and joystick, are correctly connected.</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md51"></a>
 Usage</h1>
 <ol type="1">
-<li><b>Connecting the Hardware</b>:<ul>
-<li>Connect the button matrix to the ATmega328P as per your configuration.</li>
-<li>Connect the ATmega328P to the Arduino Micro via I2C.</li>
+<li><b>Hardware Connection</b> <br  />
+<ul>
+<li>Connect the button matrix to the ATmega328P as per the configuration. <br  />
+</li>
+<li>Establish an I2C connection between the ATmega328P and the Arduino Micro. <br  />
+</li>
 </ul>
 </li>
-<li><b>Running the Code</b>:<ul>
-<li>Power up your setup.</li>
-<li>The ATmega328P will continuously poll the button states and update the Arduino Micro via I2C.</li>
+<li><b>Running the Firmware</b> <br  />
+<ul>
+<li>Power on your system. <br  />
+</li>
+<li>The ATmega328P will only send a 16-bit signal to the Arduino Micro when requested over I2C, ensuring efficient communication.</li>
 </ul>
 </li>
 </ol>
-<h1><a class="anchor" id="autotoc_md48"></a>
+<h1><a class="anchor" id="autotoc_md52"></a>
 Documentation</h1>
-<p>The detailed documentation for this project can be found under <a href="doc/software/html/index.html">doc/software/html/index.html</a></p>
-<h1><a class="anchor" id="autotoc_md49"></a>
+<ul>
+<li><b>Software</b>: <a href="doc/software/html/index.html">doc/software/html/index.html</a></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md53"></a>
 Contributing</h1>
 <p>We welcome contributions from the community!</p>
 <p>First, read the <a class="el" href="md__c_o_n_t_r_i_b_u_t_i_n_g.html">general contributing conventions for projects from me</a>.</p>
@@ -180,7 +213,7 @@ Contributing</h1>
 <li><code>Push to the branch (</code>git push origin feature-branch`).</li>
 <li>Create a new Pull Request.</li>
 </ol>
-<h1><a class="anchor" id="autotoc_md50"></a>
+<h1><a class="anchor" id="autotoc_md54"></a>
 License</h1>
 <p>This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. </p>
 </div></div><!-- contents -->
